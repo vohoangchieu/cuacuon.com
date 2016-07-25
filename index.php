@@ -90,7 +90,7 @@ if ($array_param[1] == "c" && trim($array_param[2]) != "") {
 } else if ($array_param[1] == "bang-gia-cua-cuon-dai-loan-cua-keo-cong-nghe-dai-loan") {
 //    include "./controller/home.php";
     include "./view/bang-gia-cua-cuon.php";
-} else if ($array_param[1] == "") {
+} else {//if ($array_param[1] == "") {
     if ($mobile) {
         include "./mobile/controller/home.php";
         include "./mobile/view/home.php";
@@ -98,9 +98,9 @@ if ($array_param[1] == "c" && trim($array_param[2]) != "") {
         include "./controller/home.php";
         include "./view/home.php";
     }
-} else {
-    header("HTTP/1.0 404 Not Found");
-}
+} //else {
+  //  header("HTTP/1.0 404 Not Found");
+//}
 //include "./view/home.php";
 //include "./view/category.php";
 //include "./view/detail.php";
