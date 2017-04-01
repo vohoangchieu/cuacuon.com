@@ -10,7 +10,7 @@ if (mysqli_num_rows($query_product_info_result) == 0) {
     exit();
 } else {
     $product_info = mysqli_fetch_array($query_product_info_result);
-    $product_info["name"] = $product_info["id"] . " - " . $product_info["name"];
+    $product_info["name"] = $product_info["name"];
     $product_info["product_url"] = "/" . $product_info['alilas'];
     $product_info["product_thumb"] = "/static/image/product/thumb_" . $product_info['id'] . ".jpg";
     $product_info["product_image"] = "/static/image/product/" . $product_info["id"] . ".jpg";

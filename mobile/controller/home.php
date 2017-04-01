@@ -1,6 +1,6 @@
 <?php
 
-$query_bosch = "select *from product where type=0 order by show_in_home desc  limit 16";
+$query_bosch = "select *from product order by show_in_home desc  limit 16";
 $query_result_bosch = mysqli_query($db, $query_bosch);
 $list_home_product_bosch = get_list_product_from_query_result($query_result_bosch);
 
